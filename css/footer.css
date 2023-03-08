@@ -1,0 +1,93 @@
+@import url('utilidades.css');
+footer {
+    background-color: black;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 0;
+    
+}
+footer h2 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+footer p {
+    margin: 0;
+    padding-top: 15px;
+    color: var(--c5);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+footer span {
+    font-size: 1rem;
+    color: #9c9c9c;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.div-contato {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2dede50;
+}
+.endereço {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2dede50;
+
+}
+.redes {
+    padding-top: 20px;
+    
+}
+.face, .yt {
+    padding-left: 20px;
+}
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--c5);
+    display: block;
+    padding-top: 15px;
+}
+.informaçoes h2 {
+    padding-bottom: 20px;
+}
+footer a:hover {
+    color: #e0e0e0;
+}
+@media (max-width: 800px) {
+    footer {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        gap: 30px;
+    }
+    
+}
+@media (max-width: 540px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    footer span {
+        grid-row: 1;
+        padding-top: 10px;
+        grid-column: 2;
+    }
+    footer h2 {
+padding-top: 50px;
+    }
+}

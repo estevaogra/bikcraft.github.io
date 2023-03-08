@@ -1,0 +1,48 @@
+@import url('utilidades.css');
+.termos ul {
+list-style: none;
+padding-bottom: 30px;
+}
+.termos li {
+    margin-left: 0px;
+    font-family: var(--roboto);
+    font-size: 1rem;
+    color: var(--c10);
+    font-weight: 400;
+    max-width: 100ch;
+    padding-bottom: 30px;
+}
+.termos h2 {
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: #111;
+    font-size: 1.5rem;
+    margin-left: 0 ;
+}
+.termos {
+    margin-left: 60px;
+   
+}
+.termos1, .termos2 , .termos3 {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 800px) {
+    .termos {
+        margin-left: 20px;
+    }
+}
+@media (max-width: 800px) {
+    .termos-h1 {
+        max-width: 20ch;
+        font-size: 1.9rem;
+       
+    }
+    .termos-h1::after {
+        width: 6px;
+        height: 6px;
+    }
+    .termos-par {
+        font-size: 1rem;
+    }
+}

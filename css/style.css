@@ -1,0 +1,254 @@
+@import url('./home.css');
+@import url('tecnologia.css');
+@import url('./utilidades.css');
+@import url('./parceiros.css');
+@import url('depoimento.css');
+@import url('seguros.css');
+@import url('footer.css');
+@import url('bicicletas.css');
+@import url('termos.css');
+@import url('nimbus.css');
+@import url('pag-seguros.css');
+@import url('contato.css');
+@import url('orçamento.css');
+header {
+    background-color: #000;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+body {
+   
+    margin: 0px;
+    padding-bottom: 0px;
+    
+}
+
+menu {
+    padding: 10px;
+   margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-column: 4;
+    margin-right: 40px;
+    font-family: 'Poppins', 'Arial', 'semi-bold';
+    font-weight: 400;
+}
+.link-menu {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 1.08rem;
+    position: relative;
+}
+.link-menu::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+.link-menu:hover::after{
+    width: 69%;
+
+}
+
+header img {
+    align-self: center ;
+   height: 35%;
+   margin-left: 40px;
+   padding-left: 20px;
+   
+}
+@media (max-width: 800px) {
+    .link-menu {
+        background-color: #111;
+        padding: 12px 10px;
+        border-radius: 4px;
+        
+    }
+    .link-menu:hover {
+        background-color: #2e2e2e;
+        
+    }
+    .link-menu::after{
+       display: none;
+    }
+    
+}
+
+
+
+@media (max-width: 600px) {
+    .link-menu {
+        padding: 10px 5px;
+        margin-right: 0px;
+        font-size: 1rem;
+    }
+
+    menu img {
+        margin-left: 10px;
+        padding-left: 0px;
+    }
+    
+}
+@media (max-width: 490px) { 
+menu {
+    margin-left: 30px;
+     margin-right: 10px;
+}
+menu img {
+    height: 20%;
+}
+
+}
+
+.introdução {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    background-color: #000;
+    gap: 20px;
+   padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.introdução img {
+    max-width: 90%;
+}
+.div-txt1 {
+   
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 120px;
+} 
+.titulo1 {
+    color: #fff;
+    text-align: start;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    
+    line-height: 1.125;
+    font-family: 'Poppins', 'Arial', 'semi-bold';
+
+}
+/* .titulo1::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(252, 187, 11);
+    border-radius: 50%;
+    text-align: start;
+    position: relative;
+    left: -5px;
+    
+} */
+.par1 { 
+    color: #b2b2b2;
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Roboto', 'Arial';
+}
+
+ .introdução img {
+        display: block;
+        margin-right: 10px;
+        padding-left: 80px;
+        object-fit: cover;
+        width: 70%;
+        height: 120%;
+        object-position: right;
+        
+    }
+    @media(max-width: 990px) {
+        .botao {
+            margin-bottom: 30px;
+        }
+       .introdução img {
+        width: 60%;
+       height: 110%;
+       }
+    }
+    @media (max-width: 800px) {
+.introdução {
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+    
+}
+.bike1 {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 4px;
+    height: 100.1%;
+    
+}
+.div-img1 {
+    margin-bottom: 30px;
+}
+.titulo1 {
+    font-size: 2.5rem;
+}
+.par1 {
+    font-size: 1.1rem;
+}
+.selecione {
+    font-size: .8rem;
+    
+}
+.div-txt1 {
+    padding-right: 40px;
+    margin-left: 0;
+    padding-left: 40px
+}
+.par2, .par1 {
+    text-align: center;
+    }
+   .div-txt1 h1 {
+    text-align: center;
+   } 
+   .introdução img {
+display:  none;
+   }
+}
+@media (max-width: 730px) {
+    .titulo1 {
+       max-width: 20ch;
+    }
+}
+@media(max-width: 600px) {
+   .div-txt1{ margin-left: 20px;
+margin-right: 20px;}
+.titulo1::after {
+    width: 7.2px;
+    height: 7.2px;
+}
+.bikcraft {
+    padding-right: 20px;
+}
+}
+@media (max-width: 495px) {
+    body {
+        width: 600px;
+    }
+    header {
+       width: 600px;
+    }
+}

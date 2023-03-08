@@ -1,0 +1,113 @@
+.ctt-email, .ctt-fone , .ctt-local {
+    color: #ccc;
+    margin-left: 60px;
+    
+}
+
+.ctt-info h2 {
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+.ctt-local {
+    padding-bottom: 20px;
+    background: url('/img/icones/local.svg') no-repeat ;
+    padding-left: 28px;
+}
+.ctt-email {
+    padding-bottom: 20px;
+    background: url('/img/icones/email.svg') no-repeat ;
+    padding-left: 28px;
+}
+.ctt-fone {
+    padding-bottom: 30px;
+    background: url('/img/icones/telefone.svg') no-repeat ;
+    padding-left: 28px;
+}
+.ctt-info {
+    background-color: #000;
+    border-radius: 5px 0 0 5px;
+    margin-left: 60px;
+}
+.ctt-redes {
+    padding-left: 60px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+   
+}
+.ctt-redes img {
+    padding-right: 20px;
+}
+.ctt-email a {
+    color:#ccc;
+}
+.contato-preenchimento {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    background-image: linear-gradient( #111 50%, #f1efefd0 50%);
+
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) ;
+}
+    .ctt-preencher {
+        background-color: #fff;
+        margin-right: 60px;
+        border-radius: 0 5px 5px 0;
+        
+    }
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 60px;
+    }
+    .form label {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+    .form input , .form textarea {
+        margin-bottom: 20px;
+        border: 1px solid #a8a8a8;
+        font: 400 1rem/1.5 "Roboto";
+        background-color: #f1f1f1e5;
+        color: #383838;
+        padding: 10px;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+.button {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+.button:hover {
+    cursor: pointer;
+}
+.col-2 {
+    grid-column: span 2;
+}
+@media (max-width: 800px) {
+    .contato-preenchimento {
+        grid-template-columns: 1fr;
+    }
+    .ctt-info {
+        margin-left: 0;
+        border-radius: 0;
+       
+    }
+    .ctt-preencher {
+        margin-right: 0;
+        border-radius: 0;
+        align-content: center;
+    }
+    .ctt-email, .ctt-fone , .ctt-local {
+        margin-left: 120px;
+    }
+    .ctt-redes {
+        padding-left: 120px;
+    }
+    .ctt-info h2 {
+        padding-left: 120px;
+    }
+}

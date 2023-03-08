@@ -1,0 +1,80 @@
+.lojas-locais {
+    background-color: #f1f1f1e5;
+    margin-top: 0;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+   
+    padding: 60px;
+}
+.lojas-locais img {
+    max-width: 100%;
+}
+.lojas-title {
+    background-color: #f1f1f1e5;
+    padding-top: 80px;
+    margin: 0;
+    padding-left: 60px;
+}
+.loja-city {
+    background-color: #fff;
+   
+}
+.lojas-txt-bg {
+    padding: 30px;
+}
+.lojas-txt-bg h2 {
+    margin: 0;
+    display: flex;
+}
+.lojas-txt-bg h2::before {
+    content: "";
+    background-color: var(--ponto-amarelo);
+    width: 10px;
+    height: 5px;
+    display: inline-block;
+    align-self: center;
+    margin-right: 8px;
+}
+.lojas-txt-bg p {
+    color: #595959;
+    font-size: 1rem;
+   
+}
+.lojas-txt-bg a {
+    color: #595959;
+}
+.lojas-txt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.pa {
+    padding-left: 40px;
+}
+.pb {
+    padding-bottom: 30px;
+}
+.lojas-txt span {
+    display: flex;
+    align-items: center;
+   
+}
+.lojas-txt span img {
+    padding-right: 8px
+}
+@media (max-width:800px) {
+    .lojas-locais { 
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+    .lojas-txt {
+        gap: 10px;
+    }
+}
+@media (max-width:940px) {
+    .lojas-txt {
+        gap: 20px;
+    }
+}
